@@ -72,12 +72,12 @@ class App extends React.Component{
 
   render(){
     return (
-      <> 
+      <div className= "App"> 
       <Form handleChange = {this.handleChange}
       click = {this.click}/>
      { this.state.err === false? <Results value = {this.state.value}
       state = {this.state}/> : <div>Nie ma takiego miasta w bazie</div>}
-      </>
+      </div>
     )
   }
 }

@@ -1,0 +1,23 @@
+.upperContainer {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.startQuote {
+  margin: 20px 0 20px;
+  text-align: center;
+  font-size: 25px;
+  color: #add8e6;
+}
+
+form input {
+  padding: 5px 15px;
+}
+form button {
+  background-color: white;
+  padding: 5px 15px;
+  margin-left: 10px;
+}

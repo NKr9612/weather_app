@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './Results.css';
+import logo from './img/germany.png'
 
 const Results = props =>{
 
@@ -7,8 +8,10 @@ const Results = props =>{
     const sunriseTime = new Date(sunrise * 1000).toLocaleTimeString();
     const sunsetTime = new Date(sunset * 1000).toLocaleTimeString();
     return (
-        <ul>
-         <li>Miasto, które wyszukałeś to: <strong>{city}</strong></li>
+        <>
+       <div className="city"> {city}</div>
+       <div className="country"><img src={logo} alt="somethings wrong" className='img1'/>{country} </div>
+        <ul className="underContainer">
          <li>Dnia <strong>{date}</strong></li>
          <li>Kraj: <strong>{country}</strong></li>
          <li>Temperatura wynosi: <strong>{temp}</strong></li>
@@ -21,6 +24,7 @@ const Results = props =>{
          <li>Wschód: <strong>{sunriseTime}</strong></li>
          <li>Zachód: <strong>{sunsetTime}</strong></li>
         </ul>
+        </>
     )
 }
 

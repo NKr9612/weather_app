@@ -1,0 +1,16 @@
+.city {
+  text-align: center;
+}
+.country {
+  text-align: center;
+  margin: 10px;
+}
+.img1 {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+ul li {
+  list-style: none;
+}
